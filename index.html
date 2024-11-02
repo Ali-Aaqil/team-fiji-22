@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!--Buttons-->
+    <div class="profile-container">
+        <div class="button-container">
+            <a href="help.html" target="_blank" class="button">Home</a>
+            <a href="#teams" class="button">Teams</a>
+            <a href="#players" class="button">Players</a>
+            <a href="help.html" target="_blank" class="button help">Help</a>
+        </div>
+
+        <!-- Header & Logo -->
+        <div class="header">
+            <img src="ali.jpg" alt="Ali logo" class="logo">
+            <h2 class="title">Ali Sports Management Systems</h2>
+        </div>
+    
+        <div class="main-content">
+            <p>Teams</p>
+            <p>Team Name</p>
+            <p>List</p>
+
+            <div class="add-player-form">
+                <input type="text" id="playerName" placeholder="Name" required>
+                <input type="number" id="playerAge" placeholder="Age" required>
+                <input type="text" id="playerPosition" placeholder="Position" required>
+                <input type="text" id="playerTeam" placeholder="Team" required>
+                <button class="button" onclick="addPlayer()">Add Player</button>
+            </div>
+            <table id="teamTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <!-- Team data will be inserted here -->
+                </tbody>
+            </table>
+        </div>    
+
+    
+    </div>
+    
+    
+    <script src="project.js"></script>
+</body>
+</html>
